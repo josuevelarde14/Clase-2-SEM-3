@@ -1,0 +1,63 @@
+h1 {
+    color: navy;
+    font-size: 30px;
+    text-align: center;
+}
+
+p {
+    font-size: 15px;
+    text-align: center;
+    color: blue
+}
+
+img {
+    display: block;
+    margin: auto;
+    width: 50%;
+    height: auto;
+    border-radius: 50%;
+    border: 2px solid navy;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+li {
+    margin: 10px;
+    padding: 10px;
+    background-color: navy;
+    color: white;
+    border-radius: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    transition: all 0-3s ease-in-out;
+
+
+}
+
+li:hover {
+    transform: scale(1.2);
+    cursor: pointer;
+    color:chocolate;
+    border: red 5px dotted;
+}
+
+
+img:focus {
+    width: 70px;
+    height: 74px;
+  }
+
+/*btnControl {
+    display: none;
+}
+
+btnControl:checked + label > img {
+    width: 70px;
+    height: 74px;}*/
