@@ -1,0 +1,37 @@
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 200px;
+    height: 100%;
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+}
+
+.sidebar a {
+    display: block;
+    color: #fff;
+    text-decoration: none;
+    margin-bottom: 10px;
+}
+
+.sidebar a:hover {
+    background-color: #fff;
+    color: #333;
+}
+
+.submenu {
+    display: none;
+    background-color: #555;
+    padding: 10px;
+}
+
+.sidebar a.active + .submenu {
+    display: block;
+}
+
+.content {
+    margin-left: 200px;
+    padding: 20px;
+}
