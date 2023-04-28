@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Galería de imágenes</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <h1>Tienda de celulares</h1>
+    <div class="gallery">
+      <img src="https://smartphonesperu.pe/wp-content/uploads/2020/09/celulares-samsung-galaxy-a71.jpg" alt="Imagen 1" onclick="showModal(this.src)">
+      <img src="https://ichef.bbci.co.uk/news/640/cpsprodpb/BE54/production/_117842784_lg.jpg" alt="Imagen 2" onclick="showModal(this.src)">
+      <img src="https://images.contentstack.io/v3/assets/bltf4ed0b9a176c126e/blt82e5424125120264/631634538c6aa1311ba17c30/FF-Apple.png" alt="Imagen 3" onclick="showModal(this.src)">
+      <img src="https://hiraoka.com.pe/media/wysiwyg/mejores_marcas_celulares-samsung_1.jpg" alt="Imagen 4" onclick="showModal(this.src)">
+      <img src="https://wrmx00.epimg.net/programa/imagenes/2017/07/25/en_buena_onda/1500944673_497913_1500945124_noticia_normal.jpg" alt="Imagen 5" onclick="showModal(this.src)">
+      <img src="https://imgmedia.larepublica.pe/640x377/larepublica/original/2022/05/02/626fe3803f4ec327df29b161.webp" alt="Imagen 6" onclick="showModal(this.src)">
+    </div>
+
+    <!-- Modal para la imagen ampliada -->
+    <div class="modal" onclick="closeModal()">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <img id="modal-img">
+      </div>
+    </div>
+
+    <script>
+      function showModal(src) {
+        document.getElementById("modal-img").src = src;
+        document.querySelector(".modal").style.display = "block";
+      }
+
+      function closeModal() {
+        document.querySelector(".modal").style.display = "none";
+      }
+    </script>
+  </body>
+</html>

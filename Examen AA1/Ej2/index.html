@@ -1,0 +1,46 @@
+<html>
+  <head>
+    <title>Lista de Artículos</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <div class="menu">
+      <label for="categorias">Filtrar por categoría:</label>
+      <select id="categorias">
+        <option value="todos">Todos</option>
+        <option value="tecnologia">Tecnología</option>
+        <option value="deporte">Deporte</option>
+        <option value="moda">Moda</option>
+      </select>
+    </div>
+    <ul class="lista">
+      <li class="tecnologia" data-categoria="tecnologia">Artículo de Tecnología 1</li>
+      <li class="deporte" data-categoria="deporte">Artículo de Deporte 1</li>
+      <li class="tecnologia" data-categoria="tecnologia">Artículo de Tecnología 2</li>
+      <li class="moda" data-categoria="moda">Artículo de Moda 1</li>
+      <li class="deporte" data-categoria="deporte">Artículo de Deporte 2</li>
+      <li class="moda" data-categoria="moda">Artículo de Moda 2</li>
+      <li class="tecnologia" data-categoria="tecnologia">Artículo de Tecnología 3</li>
+    </ul>
+    <script>
+        const selectCategorias = document.getElementById("categorias");
+      const listaArticulos = document.querySelectorAll(".lista li");
+
+      selectCategorias.addEventListener("change", () => {
+        const categoriaSeleccionada = selectCategorias.value;
+        listaArticulos.forEach((articulo) => {
+          if (
+            articulo.getAttribute("data-categoria") === categoriaSeleccionada ||
+            categoriaSeleccionada === "todos"
+          ) {
+            articulo.style.display = "block";
+          } else {
+            articulo.style.display = "none";
+          }
+        });
+      });
+    </script>
+  </body>
+</html>
