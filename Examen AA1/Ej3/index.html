@@ -1,16 +1,64 @@
+<!-- Crea una página web que contenga una animación en la que un texto aparezca letra por
+letra. Utiliza CSS para crear la animación y asegúrate de que el texto tenga un buen
+aspecto y sea fácil de leer. Además, la animación debe detenerse una vez que se ha
+mostrado todo el texto. -->
+
 <!DOCTYPE html>
-<html lang="es">
-  <head>
-    <meta charset="UTF-8" />
-    <title>Letra por letra</title>
-    <link rel="stylesheet" href="estilos.css" />
-  </head>
-  <body>
-    <div id="texto-animado">
-      <span>H</span>
-      <span>O</span>
-      <span>L</span>
-      <span>A</span>
-    </div>
-  </body>
+<html>
+    <head>
+        <title>Letra por letra</title>
+        <style>
+            html{
+	background-color:#000000;
+}
+h1{
+	color:#FFFFFF;
+	font-family:Consolas,monospace;
+	position:relative;
+	float:left;
+	font-size:150%;
+}
+@keyframes parpadeo{
+	from, to{border-color:transparent}
+	50%{border-color:#FFFFFF}
+}
+@keyframes escribiendo{
+	from{width:100%}
+	to{width:0}
+}
+@-webkit-keyframes parpadeo{
+	from, to{border-color:transparent}
+	50%{border-color:#FFFFFF}
+}
+@-webkit-keyframes escribiendo{
+	from{width:100%}
+	to{width:0}
+}
+@-moz-keyframes parpadeo {
+	from, to{border-color:transparent}
+	50%{border-color:#FFFFFF}
+}	
+@-moz-keyframes escribiendo {
+	from{width:100%}
+	to{width:0}
+}
+h1 span{
+	position:absolute;
+	top:0;
+	right:0;
+	width:0;
+	background-color:#000000;
+	border-left: .1em solid #FFFFFF;
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	animation: escribiendo 5s steps(36, end), parpadeo 1s step-end infinite;
+	-webkit-animation: escribiendo 5s steps(36, end), parpadeo 1s step-end infinite;
+	-moz-animation: escribiendo 5s steps(36, end), parpadeo 1s step-end infinite;
+}
+        </style>
+      </head>
+      <body>
+        <h1>Hola, este es el texto que se muestra letra por letra..<span>&nbsp;</span></h1>
+      </body>
 </html>
