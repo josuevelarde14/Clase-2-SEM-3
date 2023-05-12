@@ -1,9 +1,6 @@
-let miboton= document.getElementById("miboton");
+let Keynput = document.getElementById("miinput");
 
-console.log(miboton);
-
-miboton.addEventListener("click",function(){alert("Me presionaste");}
-);
-
-// # es para id
-// var button= $("miboton")
+Keynput.addEventListener("keyup", function(){
+    let valor = Keynput.value;
+    console.log("El valor del input es: "+ valor );
+});
