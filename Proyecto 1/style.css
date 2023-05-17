@@ -1,0 +1,38 @@
+body {
+    font-family: Arial, sans-serif;
+  }
+  h1 {
+    text-align: center;
+  }
+  #guess-input {
+    margin-top: 10px;
+  }
+  #result {
+    margin-top: 10px;
+    font-weight: bold;
+    text-align: center;
+  }
+  #hint {
+    margin-top: 10px;
+    font-style: italic;
+    text-align: center;
+  }
+  #attempts {
+    margin-top: 10px;
+    font-weight: bold;
+    text-align: center;
+  }
+  #event-list {
+    margin-top: 10px;
+    text-align: center;
+    display: none;
+  }
+  #actor-photos {
+    margin-top: 10px;
+    text-align: center;
+    display: none;
+  }
+  img {
+    max-width: 100px;
+    margin: 5px;
+  }
