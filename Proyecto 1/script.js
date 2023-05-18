@@ -6,7 +6,7 @@ var attempts = 3;
       var eventList = document.getElementById("event-list");
       var actorPhotos = document.getElementById("actor-photos");
       
-      if (guess.toLowerCase() === "Los vengadores") {
+      if (guess.toLowerCase() === "los vengadores") {
         result.textContent = "¡Correcto! ¡Has adivinado la película de los Vengadores!";
         eventList.style.display = "none";
         actorPhotos.style.display = "none";
