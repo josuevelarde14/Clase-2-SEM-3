@@ -4,16 +4,16 @@ body {
   background-image: url("fondo.jpg");
   background-size: cover;
   background-repeat: no-repeat;
-  background-color: rgba(0, 0, 0, 0.1); /* Color de fondo con transparencia */
+  background-color: rgba(0, 0, 0, 0.1); 
 }
 
-/* Estilos para el título principal */
+
 h1 {
   text-align: center;
   color: white;
 }
 
-/* Estilos para el contenedor de la entrada y el botón de adivinar */
+
 #guess-input {
   margin-top: 10px;
   text-align: center;
@@ -40,7 +40,7 @@ button:hover {
   background-color: #0056b3;
 }
 
-/* Estilos para el resultado de la adivinanza */
+
 #result {
   margin-top: 10px;
   font-weight: bold;
@@ -48,7 +48,7 @@ button:hover {
   color: #ff0000;
 }
 
-/* Estilos para la pista */
+
 #hint {
   margin-top: 10px;
   font-style: italic;
@@ -56,14 +56,15 @@ button:hover {
   color: whitesmoke;
 }
 
-/* Estilos para los intentos restantes */
+
 #attempts {
   margin-top: 10px;
   font-weight: bold;
   text-align: center;
+  color: whitesmoke;
 }
 
-/* Estilos para la lista de eventos */
+
 #event-list {
   margin-top: 10px;
   text-align: center;
@@ -84,7 +85,7 @@ button:hover {
   margin-bottom: 5px;
 }
 
-/* Estilos para las fotos de los actores */
+
 #actor-photos {
   margin-top: 10px;
   text-align: center;
