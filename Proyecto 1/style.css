@@ -1,38 +1,103 @@
+/* Estilos generales */
 body {
-    font-family: Arial, sans-serif;
-  }
-  h1 {
-    text-align: center;
-  }
-  #guess-input {
-    margin-top: 10px;
-  }
-  #result {
-    margin-top: 10px;
-    font-weight: bold;
-    text-align: center;
-  }
-  #hint {
-    margin-top: 10px;
-    font-style: italic;
-    text-align: center;
-  }
-  #attempts {
-    margin-top: 10px;
-    font-weight: bold;
-    text-align: center;
-  }
-  #event-list {
-    margin-top: 10px;
-    text-align: center;
-    display: none;
-  }
-  #actor-photos {
-    margin-top: 10px;
-    text-align: center;
-    display: none;
-  }
-  img {
-    max-width: 100px;
-    margin: 5px;
-  }
+  font-family: Arial, sans-serif;
+  background-image: url("fondo.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: rgba(0, 0, 0, 0.1); /* Color de fondo con transparencia */
+}
+
+/* Estilos para el título principal */
+h1 {
+  text-align: center;
+  color: white;
+}
+
+/* Estilos para el contenedor de la entrada y el botón de adivinar */
+#guess-input {
+  margin-top: 10px;
+  text-align: center;
+}
+
+input[type="text"] {
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  outline: none;
+}
+
+button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: #007bff;
+  color: #fff;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+/* Estilos para el resultado de la adivinanza */
+#result {
+  margin-top: 10px;
+  font-weight: bold;
+  text-align: center;
+  color: #ff0000;
+}
+
+/* Estilos para la pista */
+#hint {
+  margin-top: 10px;
+  font-style: italic;
+  text-align: center;
+  color: whitesmoke;
+}
+
+/* Estilos para los intentos restantes */
+#attempts {
+  margin-top: 10px;
+  font-weight: bold;
+  text-align: center;
+}
+
+/* Estilos para la lista de eventos */
+#event-list {
+  margin-top: 10px;
+  text-align: center;
+  display: none;
+  color: whitesmoke;
+}
+
+#event-list p {
+  font-weight: bold;
+}
+
+#event-list ul {
+  list-style: none;
+  padding: 0;
+}
+
+#event-list li {
+  margin-bottom: 5px;
+}
+
+/* Estilos para las fotos de los actores */
+#actor-photos {
+  margin-top: 10px;
+  text-align: center;
+  display: none;
+}
+
+#actor-photos p {
+  font-weight: bold;
+}
+
+#actor-photos img {
+  max-width: 100px;
+  margin: 5px;
+  border-radius: 50%;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+}
