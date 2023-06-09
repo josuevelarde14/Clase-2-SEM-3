@@ -1,0 +1,27 @@
+<!-- Utiliza un "if/else" anidado para imprimir un mensaje dependiendo de la edad de una
+persona: si es mayor de 18, si es mayor de 12 y menor de 18, o si es menor de 12. -->
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Ejercicio 10</title>
+    <script>
+        function verificarEdad() {
+            var edad = parseInt(prompt("Ingresa tu edad"));
+
+            if (edad > 18) {
+                console.log("Eres mayor de edad.");
+            } else if (edad > 12 && edad <= 18) {
+                console.log("Eres adolescente.");
+            } else {
+                console.log("Eres niño/a.");
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <button onclick="verificarEdad()">Verificar Edad</button>
+</body>
+
+</html>

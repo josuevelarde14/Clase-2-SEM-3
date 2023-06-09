@@ -1,0 +1,57 @@
+<!-- . Implementar un sistema de drag and drop, donde el usuario pueda arrastrar elementos
+HTML de un lugar a otro en la página. -->
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Ejercicio 10: Drag and Drop</title>
+    <style>
+        /* Estilos CSS para los elementos */
+        .draggable {
+            width: 100px;
+            height: 100px;
+            background-color: coral;
+            color: white;
+            text-align: center;
+            line-height: 100px;
+            cursor: move;
+        }
+
+        .droppable {
+            width: 200px;
+            height: 200px;
+            background-color: lightblue;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Elemento draggable -->
+    <div id="dragElement" class="draggable" draggable="true" ondragstart="drag(event)">Arrástrame</div>
+
+    <!-- Área droppable -->
+    <div id="dropArea" class="droppable" ondragover="allowDrop(event)" ondrop="drop(event)"></div>
+
+    <script>
+        // Función para permitir la acción de soltar
+        function allowDrop(event) {
+            event.preventDefault(); // Previene el comportamiento predeterminado de no permitir soltar elementos
+        }
+
+        // Función para iniciar el arrastre
+        function drag(event) {
+            event.dataTransfer.setData("text", event.target.id); // Establece el ID del elemento arrastrado en los datos del evento
+        }
+
+        // Función para soltar el elemento arrastrado
+        function drop(event) {
+            event.preventDefault(); // Previene el comportamiento predeterminado de no permitir soltar elementos
+            var data = event.dataTransfer.getData("text"); // Obtiene el ID del elemento arrastrado
+            var element = document.getElementById(data); // Busca el elemento arrastrado por su ID
+            event.target.appendChild(element); // Agrega el elemento arrastrado al contenedor de soltar
+        }
+    </script>
+</body>
+
+</html>

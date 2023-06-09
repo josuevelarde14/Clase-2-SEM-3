@@ -1,0 +1,26 @@
+<!-- . Crea una página HTML con una lista de opciones y un botón. Cuando se hace clic en
+el botón, la opción seleccionada debe mostrarse en la consola -->
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Ejercicio 4</title>
+    <script>
+        function mostrarSeleccion() {
+            var lista = document.getElementById("lista");
+            var opcionSeleccionada = lista.options[lista.selectedIndex].text;
+            console.log(opcionSeleccionada);
+        }
+    </script>
+</head>
+
+<body>
+    <select id="lista">
+        <option value="opcion1">Opcion 1</option>
+        <option value="opcion2">Opcion 2</option>
+        <option value="opcion3">Opcion 3</option>
+    </select>
+    <button onclick="mostrarSeleccion()">Mostrar en consola</button>
+</body>
+
+</html>

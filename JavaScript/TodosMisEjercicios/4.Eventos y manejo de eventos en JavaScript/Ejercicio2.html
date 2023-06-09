@@ -1,0 +1,21 @@
+<!-- Crea una página HTML con un botón y una imagen. Cuando se hace clic en el botón,
+la imagen debe cambiar por otra imagen. -->
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Ejercicio 2</title>
+    <script>
+        function cambiarImagen() {
+            var imagen = document.getElementById("imagen");
+            imagen.src = "media/imagen1.jpg";
+        }
+    </script>
+</head>
+
+<body>
+    <img src="media/imagen.jpg" width="700" height="500" id="imagen">
+    <button onclick="cambiarImagen()">Cambiar imagen</button>
+</body>
+
+</html>

@@ -1,0 +1,21 @@
+<!-- Cambiar la imagen de un elemento HTML al hacer clic en otra imagen.  -->
+
+<head>
+    <title>Ejercicio 5: Cambiar imagen al hacer clic</title>
+</head>
+
+<body>
+    <img src="media/p4.jpg" onclick="cambiarImagen(this)" width="500" height="400">
+    <img src="media/p5.jpg" onclick="cambiarImagen(this)" width="500" height="400">
+
+    <img id="miElemento" src="media/placeholder.jpg" width="700" height="500">
+
+    <script>
+        function cambiarImagen(imagen) {
+            var elemento = document.getElementById("miElemento");
+            elemento.src = imagen.src; // Cambia la imagen del elemento al origen de la imagen clicada
+        }
+    </script>
+</body>
+
+</html>

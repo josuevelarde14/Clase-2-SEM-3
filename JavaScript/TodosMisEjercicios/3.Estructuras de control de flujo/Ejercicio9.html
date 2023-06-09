@@ -1,0 +1,26 @@
+<!-- Utiliza un "do/while" para pedir al usuario que ingrese un número entre 1 y 10, y
+sigue pidiéndolo hasta que lo haga correctamente -->
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Ejercicio 9</title>
+  <script>
+    function obtenerNumero() {
+      var numero = parseInt(prompt("Ingresa un numero entre 1 y 10"));
+
+      if (numero >= 1 && numero <= 10) {
+        console.log("Numero valido: " + numero);
+      } else {
+        console.log("Numero invalido. Intentalo nuevamente.");
+        obtenerNumero();
+      }
+    }
+  </script>
+</head>
+
+<body>
+  <button onclick="obtenerNumero()">Obtener numero</button>
+</body>
+
+</html>

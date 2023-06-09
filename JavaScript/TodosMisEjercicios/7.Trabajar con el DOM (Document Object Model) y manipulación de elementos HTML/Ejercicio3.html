@@ -1,0 +1,10 @@
+<!-- Cambiar el texto de un elemento HTML al hacer clic en un botón -->
+<button onclick="cambiarTexto()">Cambiar texto</button>
+<div id="miElemento">Texto a cambiar</div>
+
+<script>
+    function cambiarTexto() {
+        var elemento = document.getElementById("miElemento");
+        elemento.textContent = "Nuevo texto"; // Cambia el contenido de texto del elemento a "Nuevo texto"
+    }
+</script>

@@ -1,0 +1,22 @@
+<!-- Crea una página HTML con un botón y un campo de texto. Cuando se hace clic en el
+botón, el valor del campo de texto debe mostrarse en la consola. -->
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Ejercicio 1</title>
+    <script>
+        function mostrarValor() {
+            var campoTexto = document.getElementById("campoTexto");
+            var valor = campoTexto.value;
+            console.log(valor);
+        }
+    </script>
+</head>
+
+<body>
+    <input type="text" id="campoTexto">
+    <button onclick="mostrarValor()">Mostrar en consola</button>
+</body>
+
+</html>

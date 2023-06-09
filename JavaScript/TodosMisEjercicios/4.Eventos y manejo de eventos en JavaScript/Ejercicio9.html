@@ -1,0 +1,22 @@
+<!-- Crea una página HTML con un campo de texto. Cuando se escribe algo en el campo
+de texto, el texto debe mostrarse en otro elemento HTML en tiempo real. -->
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Ejercicio 9</title>
+    <script>
+        function mostrarTexto() {
+            var campoTexto = document.getElementById("campoTexto");
+            var resultado = document.getElementById("resultado");
+            resultado.innerHTML = campoTexto.value;
+        }
+    </script>
+</head>
+
+<body>
+    <input type="text" id="campoTexto" oninput="mostrarTexto()">
+    <p id="resultado"></p>
+</body>
+
+</html>

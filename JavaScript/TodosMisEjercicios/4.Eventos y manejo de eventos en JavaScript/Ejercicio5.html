@@ -1,0 +1,22 @@
+<!-- Crea una página HTML con un campo de texto y un botón. Cuando se hace clic en el
+botón, el texto del campo de texto debe ser copiado al portapapeles. -->
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Ejercicio 5</title>
+    <script>
+        function copiarTexto() {
+            var campoTexto = document.getElementById("campoTexto");
+            campoTexto.select();
+            document.execCommand("copy");
+        }
+    </script>
+</head>
+
+<body>
+    <input type="text" id="campoTexto">
+    <button onclick="copiarTexto()">Copiar al portapapeles</button>
+</body>
+
+</html>

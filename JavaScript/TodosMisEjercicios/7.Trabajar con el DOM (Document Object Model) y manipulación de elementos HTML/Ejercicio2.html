@@ -1,0 +1,10 @@
+<!-- Ocultar un elemento HTML al hacer clic en otro elemento. -->
+<button onclick="ocultarElemento()">Ocultar elemento</button>
+<div id="miElemento">Elemento a ocultar</div>
+
+<script>
+    function ocultarElemento() {
+        var elemento = document.getElementById("miElemento");
+        elemento.style.display = "none"; // Oculta el elemento estableciendo su estilo a "none"
+    }
+</script>
