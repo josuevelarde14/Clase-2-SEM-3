@@ -1,0 +1,24 @@
+<!-- Crea una página HTML con un formulario que tenga un campo de texto y un botón.
+Cuando se envía el formulario, el valor del campo de texto debe mostrarse en la
+consola -->
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Ejercicio 3</title>
+    <script>
+        function mostrarValor(form) {
+            var valor = form.campoTexto.value;
+            console.log(valor);
+        }
+    </script>
+</head>
+
+<body>
+    <form onsubmit="mostrarValor(this); return false;">
+        <input type="text" name="campoTexto">
+        <button type="submit">Mostrar en consola</button>
+    </form>
+</body>
+
+</html>

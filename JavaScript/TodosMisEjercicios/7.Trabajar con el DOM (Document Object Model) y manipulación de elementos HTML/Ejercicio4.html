@@ -1,0 +1,12 @@
+<!-- Agregar un nuevo elemento HTML a la página al hacer clic en un botón -->
+<button onclick="agregarElemento()">Agregar elemento</button>
+<div id="contenedor"></div>
+
+<script>
+    function agregarElemento() {
+        var contenedor = document.getElementById("contenedor");
+        var nuevoElemento = document.createElement("p"); // Crea un nuevo elemento <p>
+        nuevoElemento.textContent = "Nuevo elemento"; // Establece el contenido de texto del nuevo elemento
+        contenedor.appendChild(nuevoElemento); // Agrega el nuevo elemento al contenedor
+    }
+</script>

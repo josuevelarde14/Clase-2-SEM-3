@@ -1,0 +1,19 @@
+<!-- Crear un formulario de registro que valide que los campos requeridos estén completos
+antes de enviar el formulario. -->
+<form onsubmit="validarFormulario(event)">
+    <input type="text" id="nombre" required>
+    <input type="email" id="email" required>
+    <button type="submit">Enviar</button>
+</form>
+
+<script>
+    function validarFormulario(event) {
+        var nombre = document.getElementById("nombre").value;
+        var email = document.getElementById("email").value;
+
+        if (nombre === "" || email === "") {
+            event.preventDefault(); // Evita que el formulario se envíe si los campos requeridos están vacíos
+            alert("Por favor, completa todos los campos requeridos.");
+        }
+    }
+</script>

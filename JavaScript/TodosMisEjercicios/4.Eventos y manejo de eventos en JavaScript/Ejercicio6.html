@@ -1,0 +1,27 @@
+<!-- Crea una página HTML con un elemento div. Cuando se mueve el mouse sobre el
+div, debe cambiar de color -->
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Ejercicio 6</title>
+    <style>
+        #miDiv {
+            width: 200px;
+            height: 200px;
+            background-color: blue;
+        }
+    </style>
+    <script>
+        function cambiarColor() {
+            var miDiv = document.getElementById("miDiv");
+            miDiv.style.backgroundColor = "red";
+        }
+    </script>
+</head>
+
+<body>
+    <div id="miDiv" onmouseover="cambiarColor()"></div>
+</body>
+
+</html>

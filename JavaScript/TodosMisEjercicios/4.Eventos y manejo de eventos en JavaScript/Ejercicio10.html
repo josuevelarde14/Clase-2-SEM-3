@@ -1,0 +1,24 @@
+<!-- Crea una página HTML con un botón. Cuando se hace clic en el botón, se debe
+descargar un archivo desde el servidor y guardarlo en el disco local del usuario. -->
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Ejercicio 10</title>
+</head>
+
+<body>
+    <button onclick="descargarArchivo()">Descargar archivo</button>
+
+    <script>
+        function descargarArchivo() {
+            var link = document.createElement("a");
+            link.href = "media/imagen5.jpg";
+            link.download = "imagen.jpg";
+            link.target = "_blank";
+            link.click();
+        }
+    </script>
+</body>
+
+</html>
