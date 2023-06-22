@@ -64,4 +64,6 @@ function restartGame() {
   eventList.style.display = "none";
   actorPhotos.style.display = "none";
   startTimer(); // Reinicia el temporizador si lo has agregado
+
+
 }

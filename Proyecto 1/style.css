@@ -102,3 +102,17 @@ button:hover {
   border-radius: 50%;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
 }
+
+.containerboton1 {
+  justify-content: center;
+  align-items: center;
+}
+.containerboton2 {
+  justify-content: center;
+  align-items: center;
+}
+
+#timer {
+  text-align: center;
+  color: white;
+}
