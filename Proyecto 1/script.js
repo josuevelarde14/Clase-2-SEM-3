@@ -17,7 +17,7 @@ var attempts = 3;
         eventList.style.display = "none";
         actorPhotos.style.display = "none";
       } else {
-        attempts--;
+        attempts--; //decrementar los intentos -1
         result.textContent = "Incorrecto. Intenta de nuevo.";
         document.getElementById("attempts").textContent = "Intentos restantes: " + attempts;
         
@@ -46,7 +46,7 @@ function startTimer() {
       endGame();
     }
     document.getElementById("timer").textContent = "Tiempo restante: " + timeLimit + " segundos";
-  }, 1000);
+  }, 1000); //se ejecuta cada segundo
 }
 
 function endGame() {
@@ -64,6 +64,5 @@ function restartGame() {
   eventList.style.display = "none";
   actorPhotos.style.display = "none";
   startTimer(); // Reinicia el temporizador si lo has agregado
-
 
 }
