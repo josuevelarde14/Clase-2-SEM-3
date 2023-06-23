@@ -11,4 +11,8 @@ interface Encriptable {
       return "Texto encriptado";
     }
   }
+
+let p=new EncriptadorAES();
+p.encriptar("texto");
+
   

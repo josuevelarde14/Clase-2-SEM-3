@@ -16,6 +16,7 @@ interface ReproductorMusical {
     reproducir(): void {
       console.log("Reproduciendo canciones:");
       this.playlist.forEach(cancion => console.log(cancion));
+    return;
     }
   }
   
