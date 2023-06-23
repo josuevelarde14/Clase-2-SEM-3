@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Adivina la película</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Adivina la película</h1>
+  <div id="guess-input">
+    <input type="text" id="guess" placeholder="Escribe tu respuesta aquí">
+    <div class="containerboton1">
+      <button onclick="checkGuess()">Enviar</button>
+    </div>
+  </div>
+  <div id="result"></div>
+  <div id="hint">Pista: Es una película de super héroes</div>
+  <div id="attempts">Intentos restantes: 3</div>
+  <div id="event-list">
+    <p>Sucesos en la película:</p>
+    <ul id="event-list-items"></ul>
+  </div>
+  <div id="timer">Tiempo restante: 60 segundos</div>
+  <div id="actor-photos">
+    <p>Actores de la película:</p>
+    <ul id="actor-photos-list"></ul>
+  </div>
+  <div class="containerboton2">
+    <button onclick="restartGame()">Reiniciar juego</button>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
+```
