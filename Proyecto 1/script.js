@@ -54,7 +54,9 @@ function endGame() {
   eventList.style.display = "none";
   actorPhotos.style.display = "none";
   document.getElementById("guess").disabled = true;
+  showAnswer(); // Mostrar la respuesta correcta o realizar otra acción adicional
 }
+
 function restartGame() {
   attempts = 3;
   result.textContent = "";
@@ -65,4 +67,9 @@ function restartGame() {
   actorPhotos.style.display = "none";
   startTimer(); // Reinicia el temporizador si lo has agregado
 
+}
+function showAnswer() {
+  var answer = "Los Vengadores";
+  var answerElement = document.getElementById("answer");
+  answerElement.textContent = "La respuesta correcta es: " + answer;
 }
