@@ -1,11 +1,12 @@
 var attempts = 3;
+var timer;
+var timeLimit = 60; // Tiempo límite en segundos
     
     function checkGuess() {
       var guess = document.getElementById("guess").value;
       var result = document.getElementById("result");
       var eventList = document.getElementById("event-list");
       var actorPhotos = document.getElementById("actor-photos");
-            var guess = document.getElementById("guess").value;
       startTimer()
       if (guess.trim() === "") {
         alert("Por favor, ingresa tu respuesta antes de enviar.");
@@ -35,8 +36,6 @@ document.getElementById("guess").disabled = true;
 document.getElementById("guess").value = "";
 }
 
-var timer;
-var timeLimit = 60; // Tiempo límite en segundos
 
 function startTimer() {
   timer = setInterval(function() {
