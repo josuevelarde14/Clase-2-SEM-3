@@ -1,0 +1,134 @@
+/* Estilos generales */
+body {
+  background-color: rgba(0, 0, 0, 0.1);
+  background-image: url("fondo.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: Arial, sans-serif;
+  font-size: 200%;
+}
+
+
+h1 {
+  text-align: center;
+  color: white;
+}
+
+p{
+  text-align: center;
+  color: white;
+}
+
+#guess-input {
+  margin-top: 10px;
+  text-align: center;
+}
+
+input[type="text"] {
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  outline: none;
+}
+
+button {
+  background-color: #007bff;
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  cursor: pointer;
+  padding: 10px 20px;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+
+#result {
+  margin-top: 10px;
+  font-weight: bold;
+  text-align: center;
+  color: #ff0000;
+}
+
+
+#hint {
+  margin-top: 10px;
+  font-style: italic;
+  text-align: center;
+  color: whitesmoke;
+}
+
+
+#attempts {
+  margin-top: 10px;
+  font-weight: bold;
+  text-align: center;
+  color: whitesmoke;
+}
+
+
+#event-list {
+  margin-top: 10px;
+  text-align: center;
+  display: none;
+  color: #fff; /* Cambiar a color blanco */
+}
+
+#event-list p {
+  font-weight: bold;
+}
+
+#event-list ul {
+  list-style: none;
+  padding: 0;
+}
+
+#event-list li {
+  margin-bottom: 5px;
+}
+
+
+#actor-photos {
+  margin-top: 10px;
+  text-align: center;
+  display: none;
+}
+
+#actor-photos p {
+  font-weight: bold;
+}
+
+#actor-photos img {
+  max-width: 100px;
+  margin: 5px;
+  border-radius: 50%;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+}
+
+.containerboton1,
+.containerboton2 {
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+#timer {
+  text-align: center;
+  color: white;
+}
+
+#answer {
+  text-align: center;
+  color: white;
+}
+
+.hidden {
+  display: none;
+}
+
+.visible {
+  display: block;
+}
