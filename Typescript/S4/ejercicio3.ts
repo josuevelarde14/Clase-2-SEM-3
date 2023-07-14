@@ -7,4 +7,3 @@ interface Fruta {
   function mostrarNombresFrutas(frutas: Fruta[]): void {
     frutas.forEach(fruta => console.log(fruta.nombre));
   }
-  

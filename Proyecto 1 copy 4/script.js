@@ -29,7 +29,7 @@ var movies = [
       "Escenas de acción y persecuciones en el desierto"
     ],
     actorImages: ["actor7.jpg", "actor8.jpg", "actor9.jpg"]
-  }
+  },
   {
     title: "Star Wars",
     hints: [
@@ -55,7 +55,7 @@ window.onload = function () {
 };
 
 function startGame() {
-  currentMovieIndex = getRandomIndex(movies.length); // Seleccionar un índice de película aleatorio
+  currentMovieIndex = 0; // Comenzar con la primera película
   updateHint(); // Actualizar la pista mostrada al jugador
   startTimer(); // Iniciar el temporizador
 }
@@ -82,6 +82,11 @@ function checkGuess() {
     // Comprobar si la respuesta es correcta
     result.textContent = "¡Correcto! ¡Has adivinado la película " + movies[currentMovieIndex].title + "!";
     result.style.color = "green";
+
+    // Mostrar mensaje para adivinar la siguiente película
+    var message = document.getElementById("message");
+    message.textContent = "¡Sigue adivinando la siguiente película!";
+    message.style.color = "white";
 
     if (currentMovieIndex === movies.length - 1) { //el movies.length cuenta de 1 por eso le resto 1, si es la ultima pelicula me bota eso
       // Si se ha adivinado todas las películas
@@ -196,6 +201,8 @@ function endGame() {
 }
 
 function restartGame() {
+  var audio = document.getElementById("background-audio");
+  audio.pause();
   attempts = 3; // Restablecer el número de intentos
   document.getElementById("result").textContent = "";
   document.getElementById("result").style.color = "inherit";
@@ -205,5 +212,7 @@ function restartGame() {
   document.getElementById("event-list").style.display = "none";
   document.getElementById("actor-photos").style.display = "none";
 
+
   startGame(); // Reiniciar el juego
+  audio.play();
 }

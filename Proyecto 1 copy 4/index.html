@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Adivina la película</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Adivina las películas, tienes 3 intentos</h1>
+  <div id="guess-input">
+    <input type="text" id="guess" placeholder="Escribe tu respuesta aquí">
+    <div class="containerboton1">
+      <button onclick="checkGuess()">Enviar</button>
+    </div>
+  </div>
+    <audio id="background-audio" src="canciondefondo.mp3" autoplay loop></audio>
+  <div id="result"></div>
+  <p id="message"></p>
+  <div id="hint"></div>
+  <div id="attempts"></div>
+
+  <div id="event-list"></div>
+  <div id="actor-photos"></div>
+
+  <div id="timer">Tiempo restante: </div>
+  <div class="containerboton2">
+    <button onclick="restartGame()">Reiniciar juego</button>
+  </div>
+  <div id="answer"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>

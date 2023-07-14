@@ -10,3 +10,4 @@ interface Empleado {
     console.log(`Salario: ${empleado.salario}`);
   }
   
+  
